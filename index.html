@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="angular.min.js"></script>
+<script src="ripple-lib/build/ripple-0.7.32-min.js"></script>
+<script type="text/javascript" src="mainController.js"></script>
+
+<meta charset=utf-8 />
+<style type="text/css">
+body{font-family:Arial, Helvetica, sans-serif;}
+#container{
+	border:5px solid blue;
+	width:1000px;
+	margin:0 auto;
+	padding:10px;
+}
+#chatLog{
+	padding:5px;
+	border:1px solid blue;	
+}
+#chatLog p{margin:0;}
+.event{color:#999;}
+.warning{
+	font-weight:bold;
+	color:#CCC;
+}
+#suggestions{
+	padding-top: 10px;
+}
+#suggestions2{
+	padding-top: 0px;
+}
+</style>
+<title>Ripple Network Updates</title>
+
+</head>
+<body>
+  <div id="wrapper">
+  	<div id='content' ng-app="RippleApp" ng-controller="mainController">
+		
+  
+	  	<div id="container">
+	    
+	    	<h1>Ripple Network Updates</h1>
+	        
+	        <div id="chatLog">
+	        
+	        </div>
+	        <p id="examples">e.g. try {"command": "ledger"} or {"command":"subscribe","id":0,"streams":["ledger"]} and press enter to get up to date information.
+	        <br>
+	        You can input any API call to get a response from the network.
+	        </p>
+	        
+	    	<input id="text" type="text" />
+
+	        <button id="disconnect">Disconnect</button>
+	        <div id ="suggestions">
+	        {{understand}}
+	        <br>
+	        1) You can get more in-depth information about the Ledger that was completed. 
+
+	    	</div>
+
+		</div>
+
+	
+
+	</div>
+  
+  </div>
+</body>
+</html>​
