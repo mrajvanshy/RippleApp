@@ -111,9 +111,8 @@ remote.connect(function(){
 			
 	});
 
-
-	
-    $scope.understand = "What can you do with a Ledger Hash?";
+    $scope.enter = "Press Enter after typing in your API call.";
+    $scope.disconnect = "After you are done, press disconnect to close the connection."
 
 
 });

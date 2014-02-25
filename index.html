@@ -49,19 +49,25 @@ body{font-family:Arial, Helvetica, sans-serif;}
 	        <div id="chatLog">
 	        
 	        </div>
-	        <p id="examples">e.g. try {"command": "ledger"} or {"command":"subscribe","id":0,"streams":["ledger"]} and press enter to get up to date information.
-	        <br>
-	        You can input any API call to get a response from the network.
+	        <p id="examples"> Enter an API call to get information from the Ripple Network.
+	        	<br>
+	        	For example, try {"command": "ledger"} to get the date at which the last transaction was completed and how many transaction had been completed since you opened the connection.
+	        	<br>
+	        	Or {"command":"subscribe","id":0,"streams":["ledger"]} to get the most recent ledger hash.
+	        	<br>
+	        	Otherwise, here is a list of other ripple-lib API calls that can be called on the Ripple Network:  https://github.com/ripple/ripple-lib.
+	        	The rest of the API calls will return the default objects that they are supposed to return. 
 	        </p>
 	        
 	    	<input id="text" type="text" />
-
+	    	{{enter}}
+	    	<br>
+	    	<br>
+	    	{{disconnect}}
+	    	<br>
 	        <button id="disconnect">Disconnect</button>
 	        <div id ="suggestions">
-	        {{understand}}
-	        <br>
-	        1) You can get more in-depth information about the Ledger that was completed. 
-
+	        
 	    	</div>
 
 		</div>
