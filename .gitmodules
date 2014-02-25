@@ -1,0 +1,3 @@
+[submodule "ripple-lib"]
+	path = ripple-lib
+	url = git://github.com/ripple/ripple-lib
